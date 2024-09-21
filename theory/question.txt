@@ -1,0 +1,90 @@
+c question.
+
+1. Accept monthly salary from the user and deduct 10% insurance premium, 
+    10% loan installment find out of remaining salary. 
+2. Accept 2 numbers from user and swap 2 numbers with using 3rd variable 
+and without using 3rd variable.
+3. Write a C program to read temperature in centigrade and display a suitable message according to the temperature state below: 
+    Temp < 0 then Freezing weather 
+    Temp 0-10 then Very Cold weather 
+    Temp 10-20 then Cold weather 
+    Temp 20-30 then Normal in Temp 
+    Temp 30-40 then Its Hot 
+    Temp >=40 then Its Very Hot 
+4.WAP to print Fibonacci series up to given numbers 
+5. WAP to print number in reverse order e.g.: number = 64728 ---> reverse = 82746 
+6. Write a program to find out the max from given number (E.g., No:- 1562 Max number is 6) 
+7. Write a program make a summation of given number (E.g., 1523 Ans:- 11) 
+8. Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans:- 5) 
+9. Accept 5 names from user at run time.
+10.1 + 2 + 3 + 4 + 5 + ... + n 
+11.(1*1) + (2*2) + (3*3) + (4*4) + (5*5) + ... + (n*n) 
+12.(1)+ (1+2) + (1+2+3) + (1+2+3+4) + ... + (1+2+3+4+...+n) 
+13. 1/2 - 2/3 + 3/4 - 4/5 + 5/6 - ...... n 
+14. 1 2 3 6 9 18 27 54... 
+15.WAP to accept 5 numbers from user and display in reverse order using for loop and array  
+16. WAP to accept 5 students name and store it in array  
+17. WAP to accept 5 numbers from user and check entered number is even or odd using of array  
+18. Store 5 numbers in array and sort it in ascending order 
+19. Accept 5 numbers from user and perform sum of array 
+20. WAP to find factorial using recursion 
+21. WAP to take two Array input from user and sort them in ascending or descending order as per user’s choice 
+22. WAP to make addition, Subtraction and multiplication of two matrix using 2-D Array.
+23.Write a program in C to print individual characters of a string in reverse order 
+24. Write a program in C to count the total number of words in a string. 
+25. Write a program in C to compare two strings without using string library 
+functions. 
+26.Write a program in C to count the total number of vowels or consonants in a 
+string. 
+27. Write a program in C to find the maximum number of characters in a string. 
+28. Write a program in C to extract a substring from a given string 
+29. Write a program in C to read a sentence and replace lowercase characters with 
+uppercase and vice versa. 
+30. Write a program in C to find the number of times a given word 'is' appears in 
+the given string. 
+31. Write a program in C to remove characters from a string except alphabets. 
+32. Write a program in C to combine two strings manually 
+33. Write a program in C to find the largest and smallest words in a string.
+34.Write a program in C to find the length of a string without using library 
+functions. 
+35.WAP to find reverse of string using recursion.
+
+
+c++ question
+1.Define a class to represent a bank account. Include the following members:  Data Member: -Name of the depositor -Account Number -Type of Account -Balance amount in the account 
+Member Functions -To assign values -To deposited an amount -To withdraw an amount after checking balance -To display name and balance
+2.Write a C++ program to implement a class called Circle that has private 
+member variables for radius. Include member functions to calculate the 
+circle's area and circumference. 
+3.Write a C++ program to create a class called Rectangle that has private 
+member variables for length and width. Implement member functions to 
+calculate the rectangle's area and perimeter. 
+4. Write a C++ program to create a class called Person that has private 
+member variables for name, age and country. Implement member functions to set and get the values of these variables.
+5.Write a program to find the multiplication values and the cubic values using 
+inline function 
+6. Write a program of Addition, Subtraction, Division, Multiplication using 
+constructor. 
+7. Write a C++ program to create a class called Car that has private 
+member variables for company, model, and year. Implement member 
+functions to get and set these variables. 
+8. Write a C++ program to implement a class called Bank Account that has 
+private member variables for account number and balance. Include 
+member functions to deposit and withdraw money from the account. 
+9. Write a C++ program to create a class called Triangle that has private 
+member variables for the lengths of its three sides. Implement member 
+functions to determine if the triangle is equilateral, isosceles, or scalene. 
+10. Write a C++ program to implement a class called Employee that has 
+private member variables for name, employee ID, and salary. Include 
+member functions to calculate and set salary based on employee 
+performance. Using of constructor  
+11. Write a C++ program to implement a class called Date that has private 
+member variables for day, month, and year. Include member functions to 
+set and get these variables, as well as to validate if the date is valid. 
+12. Write a C++ program to implement a class called Student that has private 
+member variables for name, class, roll number, and marks. Include 
+member functions to calculate the grade based on the marks and display 
+the student's information. Accept address from each student implement 
+using of aggregation.
+
+// new extra question:
