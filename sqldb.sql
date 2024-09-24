@@ -56,3 +56,53 @@ select * from customer right outer join payment on customer.cid=payment.cid;
 select c.name as customer_name, p.payment_dt,p.mode from customer c, payment p 
 where c.cid=p.cid; 
 
+ select * from customer;
+ alter table customer add column age int;
+ 
+ update customer set age =24 where cid=9;
+ 
+ 
+ -- function :
+ delimiter //
+ create function getyear(age int) returns int deterministic
+ begin
+	declare curr_date date;
+    select curdate() into curr_date;
+    return year(curr_date)-age;
+ end //
+ delimiter ;
+ -- calling  function
+ select cid,name,age,getyear(age) as birth_year from customer;
+ 
+ -- function cube
+delimiter $$
+ create function cube_n(num int) returns int deterministic 
+ begin
+	declare total int;
+    set total=num*num*num;
+    return total;
+ end $$
+ delimiter ;
+ 
+ select cube_n(5) as cube_number;
+ 
+ -- procedure with no parameter 
+ delimiter //
+ create procedure p1()
+ begin 
+	select * from customer where age >=30;
+ end // 
+ delimiter ;
+ 
+ -- call procedure ;
+ call p1();
+ 
+ -- procedure with in parameter;
+delimiter //
+ create procedure p2(in c_age int)
+ begin
+	select * from customer where age=c_age;
+ end //
+delimiter ;
+ 
+ call p2(35);
