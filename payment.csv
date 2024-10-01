@@ -1,0 +1,5 @@
+cid,amount,mode,payment_dt
+1,5200,Cash,2022-02-15
+2,4000,G-pay,2001-12-15
+3,500,Cash,2012-12-24
+4,6000,"Debit card",2023-08-14

@@ -106,3 +106,64 @@ delimiter //
 delimiter ;
  
  call p2(35);
+ 
+ -- procedure with in,out parameter
+ delimiter //
+ create procedure p3(c_id int, out c_age int,out c_name varchar(20))
+ begin
+	select age,name into c_age, c_name from customer where cid=c_id;
+ end //
+ delimiter ;
+ 
+ call p3(5,@a,@n);
+ select @a as age_call , @n as name ;
+ 
+ drop procedure p4;
+ 
+ -- procedur with inout parameter;
+ delimiter //
+ create procedure p4(in id int ,inout var1 varchar(20))
+ begin
+	select mode into var1 from payment where cid=id;
+ end //
+ delimiter ;
+
+-- set @m='cash';
+call p4(4,@m);
+select @m as mode_pay;
+
+
+ -- trigger 
+delimiter //
+create trigger age_default
+before insert on customer for each row
+begin 
+	if new.age<=18 then set new.age=19;
+    end if;
+end // 
+delimiter ;
+
+drop trigger age_default;
+insert into customer values(14,"riya",2,15);
+select * from customer;
+
+-- trigger
+
+delimiter //
+create trigger total_cust
+after insert on customer for each row
+begin
+declare count int;
+	set count=count +1;
+end //
+delimiter ;
+
+-- tcl
+insert into country values(7,"Mumbai","India");
+commit;
+savepoint b;
+update country set city="New-York" where city_id=2;
+savepoint a;
+
+rollback to b;
+
